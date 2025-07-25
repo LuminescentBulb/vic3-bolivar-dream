@@ -5904,3 +5904,110 @@ ideology_modernizer_leader = {
 		}
 	}
 }
+
+ideology_bolivarian = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_bolivarian.dds"
+	character_ideology = yes
+
+	lawgroup_governance_principles = {
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_monarchy = strongly_disapprove
+		law_corporate_state = disapprove
+		law_council_republic = neutral
+		law_theocracy = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_cultural_exclusion = strongly_approve # Pan Hispanic ideals
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = approve
+	}
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = neutral
+		law_census_voting = approve
+		law_wealth_voting = approve
+		law_landed_voting = disapprove
+		law_autocracy = neutral
+		law_single_party_state = disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_homesteading = strongly_approve
+	}
+
+	lawgroup_colonization = {
+		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = strongly_disapprove
+		law_colonial_exploitation = strongly_disapprove
+		law_frontier_colonization = strongly_disapprove
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = strongly_approve
+		law_debt_slavery = strongly_disapprove
+		law_legacy_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {
+		law_mercantilism = approve
+		law_protectionism = approve
+		law_free_trade = disapprove
+		law_isolationism = disapprove
+	}
+
+	lawgroup_education_system = {
+		law_public_schools = approve
+		law_private_schools = neutral
+		law_religious_schools = disapprove
+	}
+
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = neutral
+		law_national_guard = approve
+		law_secret_police = neutral
+	}
+
+	lawgroup_policing = {
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_militarized_police = approve
+	}
+
+	lawgroup_army_model = {
+		law_professional_army = strongly_approve
+		law_national_militia = disapprove
+		law_mass_conscription = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = neutral
+		law_right_of_assembly = neutral
+		law_censorship = approve
+		law_outlawed_dissent = disapprove
+	}
+}
+
+ideology_santanterista = {
+  icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_santanterista.dds"
+  character_ideology = yes
+
+  lawgroup_governance_principles = {
+    law_parliamentary_republic = strongly_approve
+    law_presidential_republic = disapprove
+  }
+  lawgroup_distribution_of_power = {
+    law_universal_suffrage = approve
+    law_census_voting = strongly_approve
+    law_autocracy = strongly_disapprove
+  }
+  lawgroup_church_and_state = {
+    law_total_separation = strongly_approve
+  }
+}
