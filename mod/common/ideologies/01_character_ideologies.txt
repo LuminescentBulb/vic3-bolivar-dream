@@ -5992,6 +5992,8 @@ ideology_bolivarian = {
 		law_censorship = approve
 		law_outlawed_dissent = disapprove
 	}
+
+	# TODO: add noninterest plus other interest group support
 }
 
 ideology_santanterista = {

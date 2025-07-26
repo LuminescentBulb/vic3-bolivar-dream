@@ -1,4 +1,4 @@
-﻿on_game_started = {
+on_game_started = {
     on_actions = {
         on_sueno_start
     }
@@ -9,5 +9,4 @@ on_sueno_start = {
             name = sueno_is_loaded
             value = yes
         }
-    }
 }

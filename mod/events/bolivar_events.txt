@@ -1,0 +1,58 @@
+namespace = bolivar_events
+
+bolivar_events.1 = {
+    type = country_event
+    placement = root
+
+    title = bolivar_events.1.t
+    desc = bolivar_events.1.d
+    flavor = bolivar_events.1.f
+
+    event_image = {
+        video = "rp1_brazilian_city"
+    }
+
+    duration = 3
+
+    trigger = {
+        this = c:CLM
+        exists = c:CLM
+        NOT = { has_variable = shattered_dream_fired }
+        game_date <= 1836.1.1
+    }
+
+    immediate = {
+        set_variable = shattered_dream_fired
+    }
+
+    # Unify Gran Colombia
+    option = {
+        name = shattered_dream.1.a
+        set_variable = pursue_gran_colombia
+        add_journal_entry = { type = je_gran_colombia }
+        add_modifier = {
+            name = bolivar_gran_colombia_focus
+            days = long_modifier_time
+        }
+
+        ai_chance = {
+            base = 100 # ai only takes this option but why even play this mod with clombia as ai skull
+        }
+    }
+
+    # National Reconstruction
+    option = {
+        name = shattered_dream.1.b
+        set_variable = consolidate_colombia
+        add_journal_entry = { type = je_build_the_nation }
+        add_modifier = {
+            name = bolivar_national_reconstruction
+            days = long_modifier_time
+        }
+
+        ai_chance = {
+            base = 0
+        }
+    }
+
+}
