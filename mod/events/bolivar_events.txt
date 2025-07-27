@@ -12,22 +12,24 @@ bolivar_events.1 = {
         video = "rp1_brazilian_city"
     }
 
-    duration = 3
+    duration = 1
 
     trigger = {
-        this = c:CLM
-        exists = c:CLM
-        NOT = { has_variable = shattered_dream_fired }
-        game_date <= 1836.1.1
+        # Fired by on start actions
     }
 
     immediate = {
         set_variable = shattered_dream_fired
+
+        random_scope_character = {
+			limit = { has_template = CLM_Simon_Bolivar }
+			save_scope_as = simon_bolivar
+		}
     }
 
     # Unify Gran Colombia
     option = {
-        name = shattered_dream.1.a
+        name = bolivar_events.1.a
         set_variable = pursue_gran_colombia
         add_journal_entry = { type = je_gran_colombia }
         add_modifier = {
@@ -42,7 +44,7 @@ bolivar_events.1 = {
 
     # National Reconstruction
     option = {
-        name = shattered_dream.1.b
+        name = bolivar_events.1.b
         set_variable = consolidate_colombia
         add_journal_entry = { type = je_build_the_nation }
         add_modifier = {

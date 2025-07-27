@@ -3,10 +3,12 @@ on_game_started = {
         on_sueno_start
     }
 }
+
 on_sueno_start = {
     effect = {
         set_global_variable = {
             name = sueno_is_loaded
             value = yes
         }
+    }
 }

@@ -1,0 +1,6 @@
+﻿l_english:
+  bolivar_events.1.t: "The Shattered Dream"
+  bolivar_events.1.d: "[SCOPE.sCharacter('simon_bolivar').GetFullName]'s vision of a united Gran Colombia lies in ruins, but its legacy endures. The time has come for Colombia to choose its path—either to attempt the unification once more or to focus on rebuilding a strong and independent nation."
+  bolivar_events.1.f: "'America is ungovernable. Those who have served the revolution have plowed the sea.' – Simón Bolívar"
+  bolivar_events.1.a: "Pursue Gran Colombia"
+  bolivar_events.1.b: "Focus on National Reconstruction"
